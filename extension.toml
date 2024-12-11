@@ -1,0 +1,10 @@
+id = "bigquery-context-server"
+name = "BigQuery Context Server"
+description = "Model Context Server for BigQuery"
+version = "0.0.1"
+schema_version = 1
+authors = ["Ricky Esclapon <rickydataindexer@gmail.com>"]
+repository = "https://github.com/rickydata-indexer/zed-bigquery-context-server"
+
+[context_servers.bigquery-context-server]
+name = "BigQuery Context Server"
