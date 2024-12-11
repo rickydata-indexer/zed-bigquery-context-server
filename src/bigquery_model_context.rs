@@ -5,7 +5,7 @@ use zed_extension_api::{self as zed, serde_json, Command, ContextServerId, Proje
 
 const PACKAGE_NAME: &str = "@zeddotdev/bigquery-context-server";
 const PACKAGE_VERSION: &str = "0.1.0";
-const SERVER_PATH: &str = "node_modules/@zeddotdev/bigquery-context-server/index.mjs";
+const SERVER_PATH: &str = "npm/index.mjs";
 
 struct BigQueryModelContextExtension;
 
@@ -41,11 +41,13 @@ impl zed::Extension for BigQueryModelContextExtension {
 
         Ok(Command {
             command: "node".to_string(),
-            args: vec![env::current_dir()
-                .unwrap()
-                .join(SERVER_PATH)
-                .to_string_lossy()
-                .to_string()],
+            args: vec![
+                env::current_dir()
+                    .unwrap()
+                    .join(SERVER_PATH)
+                    .to_string_lossy()
+                    .to_string(),
+            ],
             env: vec![
                 ("GOOGLE_CLOUD_PROJECT".into(), settings.project_id),
                 (
