@@ -1,11 +1,11 @@
-# @zeddotdev/bigquery-context-server
+# @rickydata/bigquery-context-server
 
 A Node.js server that provides BigQuery schema information for the Zed IDE BigQuery extension.
 
 ## Installation
 
 ```bash
-npm install @zeddotdev/bigquery-context-server
+npm install @rickydata/bigquery-context-server
 ```
 
 ## Configuration

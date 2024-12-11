@@ -3,8 +3,8 @@ use std::env;
 use zed::settings::ContextServerSettings;
 use zed_extension_api::{self as zed, serde_json, Command, ContextServerId, Project, Result};
 
-const PACKAGE_NAME: &str = "@zeddotdev/bigquery-context-server";
-const PACKAGE_VERSION: &str = "0.1.0";
+const PACKAGE_NAME: &str = "@rickydata/bigquery-context-server";
+const PACKAGE_VERSION: &str = "0.1.1";
 const SERVER_PATH: &str = "npm/index.mjs";
 
 struct BigQueryModelContextExtension;

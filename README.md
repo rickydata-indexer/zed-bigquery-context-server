@@ -23,8 +23,28 @@ To use the extension, you will need to configure your Google Cloud Project and c
 
 The `credentials_json` should point to a service account key file with permissions to access BigQuery. You can create a service account and download its key file from the [Google Cloud Console](https://console.cloud.google.com/iam-admin/serviceaccounts).
 
+## Development
+
+1. Publish the npm package:
+```bash
+cd npm
+npm publish --access public
+```
+
+2. Build the Rust extension:
+```bash
+cargo build --release
+```
+
 ## Usage
 
-- `/bq-schema <table-name>`: Retrieve the schema for the table with the given name.
-- `/bq-schema all-tables`: Retrieve the schemas for all tables in the dataset.
-- `/bq-schema <dataset>.<table>`: Retrieve the schema for a specific table in a dataset.
+After installing and configuring the extension:
+
+- `/bq-schema <table-name>`: Retrieve the schema for the table with the given name
+- `/bq-schema <dataset>.<table>`: Retrieve the schema for a specific table in a dataset
+- `/bq-schema all-tables`: Retrieve the schemas for all tables in all datasets
+
+## Package Information
+
+- NPM Package: [@rickydata/bigquery-context-server](https://www.npmjs.com/package/@rickydata/bigquery-context-server)
+- Repository: [zed-bigquery-context-server](https://github.com/rickydata-indexer/zed-bigquery-context-server)
