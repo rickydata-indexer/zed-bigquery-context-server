@@ -1,3 +1,4 @@
 target
 *.wasm
 *.json
+/node_modules

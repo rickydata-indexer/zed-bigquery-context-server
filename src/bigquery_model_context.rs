@@ -5,7 +5,7 @@ use zed_extension_api::{self as zed, serde_json, Command, ContextServerId, Proje
 
 const PACKAGE_NAME: &str = "@rickydata/bigquery-context-server";
 const PACKAGE_VERSION: &str = "0.1.1";
-const SERVER_PATH: &str = "npm/index.mjs";
+const SERVER_PATH: &str = "node_modules/@rickydata/bigquery-context-server/index.mjs";
 
 struct BigQueryModelContextExtension;
 
